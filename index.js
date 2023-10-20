@@ -51,42 +51,52 @@
 //===================================================================================//
 //                               Methods, Revisited
 //===================================================================================//
-const favMovies = [
-  "Jaws",
-  "The Fellowship of the Ring",
-  "Howl's Moving Castle",
-  "Django Unchained",
-  "Cloud Atlas",
-  "The Usual Suspects",
-  "Toy Story",
-  "Conan the Barbarian",
-  "Titanic",
-  "Harry Potter",
-  "Fried Green Tomatoes",
-  "Volver",
-  "Oculus",
-  "Seven",
-  "Black Panther",
-  "Harry Potter",
-  "Imitation of Life",
-  "Snatch",
-  "Fast and Furious",
-];
-console.log(favMovies.indexOf("Titanic"));
-console.log(favMovies.sort());
-favMovies.pop();
-console.log(favMovies);
-favMovies.reverse();
-console.log(favMovies);
-favMovies.shift();
-console.log(favMovies);
-console.log(favMovies.unshift("Sixth Sense"));
-let spliceIndex = favMovies.indexOf("Django Unchained");
-favMovies.splice(spliceIndex, 1, "Avatar");
-console.log(favMovies);
-let arrayLength = favMovies.length;
-let slicedPart = favMovies.slice(arrayLength / 2);
-console.log(slicedPart);
-console.log(favMovies);
-console.log(favMovies.indexOf("Fast and Furious"));
-console.log(favMovies.indexOf("Django Unchained"));
+// const favMovies = [
+//   "Jaws",
+//   "The Fellowship of the Ring",
+//   "Howl's Moving Castle",
+//   "Django Unchained",
+//   "Cloud Atlas",
+//   "The Usual Suspects",
+//   "Toy Story",
+//   "Conan the Barbarian",
+//   "Titanic",
+//   "Harry Potter",
+//   "Fried Green Tomatoes",
+//   "Volver",
+//   "Oculus",
+//   "Seven",
+//   "Black Panther",
+//   "Harry Potter",
+//   "Imitation of Life",
+//   "Snatch",
+//   "Fast and Furious",
+// ];
+// console.log(favMovies.indexOf("Titanic"));
+// console.log(favMovies.sort());
+// favMovies.pop();
+// console.log(favMovies);
+// favMovies.reverse();
+// console.log(favMovies);
+// favMovies.shift();
+// console.log(favMovies);
+// console.log(favMovies.unshift("Sixth Sense"));
+// let spliceIndex = favMovies.indexOf("Django Unchained");
+// favMovies.splice(spliceIndex, 1, "Avatar");
+// console.log(favMovies);
+// let arrayLength = favMovies.length;
+// let slicedPart = favMovies.slice(arrayLength / 2);
+// console.log(slicedPart);
+// console.log(favMovies);
+// console.log(favMovies.indexOf("Fast and Furious"));
+// console.log(favMovies.indexOf("Django Unchained"));
+//===================================================================================//
+//                                 Where is Waldo
+//===================================================================================//
+const whereIsWaldo = [["Timmy", "Frank"],"Eggbert",["Lucinda", "Jacc", "Neff", "Snoop"],["Petunia", ["Baked Goods", "Waldo"]],];
+let indexID = whereIsWaldo.indexOf("Eggbert");
+whereIsWaldo.splice(indexID,1);
+console.log(whereIsWaldo);
+whereIsWaldo[1][2] ="No One";
+console.log(whereIsWaldo);
+console.log(whereIsWaldo[2][1][1]);
