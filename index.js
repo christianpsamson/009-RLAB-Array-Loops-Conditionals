@@ -44,7 +44,49 @@
 //===================================================================================//
 //                               Yell at the Ninja Turtles
 //===================================================================================//
-let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
-for (let member of ninjaTurtles){
-    console.log(member.toUpperCase());
-}
+// let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+// for (let member of ninjaTurtles){
+//     console.log(member.toUpperCase());
+// }
+//===================================================================================//
+//                               Methods, Revisited
+//===================================================================================//
+const favMovies = [
+  "Jaws",
+  "The Fellowship of the Ring",
+  "Howl's Moving Castle",
+  "Django Unchained",
+  "Cloud Atlas",
+  "The Usual Suspects",
+  "Toy Story",
+  "Conan the Barbarian",
+  "Titanic",
+  "Harry Potter",
+  "Fried Green Tomatoes",
+  "Volver",
+  "Oculus",
+  "Seven",
+  "Black Panther",
+  "Harry Potter",
+  "Imitation of Life",
+  "Snatch",
+  "Fast and Furious",
+];
+console.log(favMovies.indexOf("Titanic"));
+console.log(favMovies.sort());
+favMovies.pop();
+console.log(favMovies);
+favMovies.reverse();
+console.log(favMovies);
+favMovies.shift();
+console.log(favMovies);
+console.log(favMovies.unshift("Sixth Sense"));
+let spliceIndex = favMovies.indexOf("Django Unchained");
+favMovies.splice(spliceIndex, 1, "Avatar");
+console.log(favMovies);
+let arrayLength = favMovies.length;
+let slicedPart = favMovies.slice(arrayLength / 2);
+console.log(slicedPart);
+console.log(favMovies);
+console.log(favMovies.indexOf("Fast and Furious"));
+console.log(favMovies.indexOf("Django Unchained"));
