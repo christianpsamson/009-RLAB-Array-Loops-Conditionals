@@ -125,9 +125,48 @@
 //===================================================================================//
 //                              Find the Median
 //===================================================================================//
-const nums = [
-  14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18, 12,
-  17, 12, 71, 18, 15, 12,
+// const nums = [
+//   14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18, 12,
+//   17, 12, 71, 18, 15, 12,
+// ];
+// console.log(nums.sort());
+// console.log(nums[Math.ceil(nums.length / 2)]);
+//===================================================================================//
+//                           "Hungry for more?" section
+//===================================================================================//
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "Per Scholas hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps",
 ];
-console.log(nums.sort());
-console.log(nums[Math.ceil(nums.length/2)]);
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],
+  [
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs",
+  ],
+  [
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans",
+  ],
+];
+let kristynsShoe =kristynsCloset.shift();
+console.log(kristynsCloset);
+thomsCloset[2].push(kristynsShoe);
+console.log(thomsCloset);
