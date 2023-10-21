@@ -166,7 +166,26 @@ const thomsCloset = [
     "raybans",
   ],
 ];
-let kristynsShoe =kristynsCloset.shift();
+//===================================================================================//
+//                          Lost shoe
+//===================================================================================//
+let kristynsShoe = kristynsCloset.shift();
 console.log(kristynsCloset);
 thomsCloset[2].push(kristynsShoe);
 console.log(thomsCloset);
+//===================================================================================//
+//                          Outfits
+//===================================================================================//
+
+console.log(
+  `Kristyn, your first outfit: ${kristynsCloset[0]}, ${kristynsCloset[1]}, ${kristynsCloset[2]}`
+);
+console.log(
+  `Your second outfit: ${kristynsCloset[2]}, ${kristynsCloset[3]}, ${kristynsCloset[4]}`
+);
+console.log(
+  `And your third outfit: ${kristynsCloset[4]}, ${kristynsCloset[5]}, ${kristynsCloset[0]}`
+);
+console.log(`Thom, your first outfit: ${thomsCloset[0][0]}, ${thomsCloset[1][0]}, ${thomsCloset[2][0]}`);
+console.log(`Your second outfit: ${thomsCloset[0][1]}, ${thomsCloset[1][1]}, ${thomsCloset[2][1]}`);
+console.log(`And your third outfit: ${thomsCloset[0][2]}, ${thomsCloset[1][2]}, ${thomsCloset[2][2]}`);
