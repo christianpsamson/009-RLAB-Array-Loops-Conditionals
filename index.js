@@ -193,6 +193,14 @@ console.log(thomsCloset);
 //                          Washed dirty laundry
 //===================================================================================//
 
-for (i=0; i<kristynsCloset.length;i++){
-  console.log(`WHIRR: Now washing ${kristynsCloset[i]}.`);
+// for (i=0; i<kristynsCloset.length;i++){
+//   console.log(`WHIRR: Now washing ${kristynsCloset[i]}.`);
+// }
+//===================================================================================//
+//                                  Inventory
+//===================================================================================//
+for (x = 0; x < thomsCloset.length; x++) {
+  for (i = 0; i < thomsCloset[x].length; i++) {
+    console.log(thomsCloset[x][i]);
+  }
 }
