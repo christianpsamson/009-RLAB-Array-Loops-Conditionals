@@ -93,10 +93,32 @@
 //===================================================================================//
 //                                 Where is Waldo
 //===================================================================================//
-const whereIsWaldo = [["Timmy", "Frank"],"Eggbert",["Lucinda", "Jacc", "Neff", "Snoop"],["Petunia", ["Baked Goods", "Waldo"]],];
-let indexID = whereIsWaldo.indexOf("Eggbert");
-whereIsWaldo.splice(indexID,1);
-console.log(whereIsWaldo);
-whereIsWaldo[1][2] ="No One";
-console.log(whereIsWaldo);
-console.log(whereIsWaldo[2][1][1]);
+// const whereIsWaldo = [
+//   ["Timmy", "Frank"],
+//   "Eggbert",
+//   ["Lucinda", "Jacc", "Neff", "Snoop"],
+//   ["Petunia", ["Baked Goods", "Waldo"]],
+// ];
+// let indexID = whereIsWaldo.indexOf("Eggbert");
+// whereIsWaldo.splice(indexID, 1);
+// console.log(whereIsWaldo);
+// whereIsWaldo[1][2] = "No One";
+// console.log(whereIsWaldo);
+// console.log(whereIsWaldo[2][1][1]);
+//===================================================================================//
+//                              Excited Kitten
+//===================================================================================//
+const kittySays = [
+  "...human... why you taking pictures of me...?",
+  "...the catnip made me do it...",
+  "...why does the red dot always get away...?",
+];
+
+for (i=0;i<20; i++){
+  let randomNum = Math.round(Math.random() * 2);
+  if(i%2===0){
+    console.log(kittySays[randomNum]);
+  }else{
+    console.log("Love me, pet me! HSSSSSS!");
+  }
+}
